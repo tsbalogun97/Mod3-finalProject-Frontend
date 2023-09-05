@@ -27,7 +27,7 @@ export const  AuthContextProvider = ({ children }) => {
 
   return (
     //wraps up the root app (children)
-    <AuthContext.Provider>
+    <AuthContext.Provider value={{...state, dispatch}}>
       { children }
     </AuthContext.Provider>
   )
