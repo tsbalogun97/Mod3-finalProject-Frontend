@@ -7,6 +7,12 @@ const Navbar = () => {
         <Link to="/">
           <h1> Classic Car Rentals</h1>
         </Link>
+        <nav>
+          <div>
+            <link to="/login">Login</link>
+            <link to="/signup">Signup</link>
+          </div>
+        </nav>
       </div>
     </header>
   )
