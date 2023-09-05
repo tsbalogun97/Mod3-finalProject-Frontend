@@ -1,4 +1,105 @@
-# Getting Started with Create React App
+<!-- The project must include a README.mdfile with the following sections:
+
+Introduction: 
+
+A paragraph used to introduce interested parties to the project and needs to include one or more screenshots.
+Technologies Used: A list of all technologies, libraries, APIs, etc. used in the project.
+Getting Started: Links to the project's planning (Trello board) and the deployed app.
+Unsolved Problems: List any unsolved issues.
+Future Enhancements: Identify future features and enhancements planned for the project.
+
+
+
+Application Technical Requirements/Deliverables
+
+A functioning full-stack, single-page application for (Express) and a CDN service for (React).
+Incorporate the technologies of the MERN-stack:
+
+MongoDB/Mongoose
+Express
+React
+Node
+Have a well-styled interactive front-end that communicates with the Express backend via AJAX.
+Implement token-based authentication - "...a user can sign-up, log in & log out".
+Implement authorization by restricting functionality to authenticated users.
+Navigation should respond to the login status of the user.
+One User data entity minimum, which will be used for Auth; other data entities can be added and related if desired but are not required.
+Have a comprehensive feature-set.
+
+Full CRUD distributed across all Data Entities
+
+Or
+
+One of the following features instead:
+
+(Easy) - Consume a third-party API and display API data in components. -->
+
+
+
+
+
+
+
+
+
+
+
+<u><h1 align="center">My Portfolio</h1></u>
+As I reflect upon graduating from Perscholas Software engineering Bootcamp, I can't help but feel a sense of accomplishment and pride. My journey through this rigorous bootcamp has not been without trials and tribulations. However, I feel that my growth as an individual and student is a direct result of these experiences. This project not only demonstrates how much work I've put in over the course of this Software Engineering Bootcamp, but also how much I’ve fine-tuned my skills-set over this 15 weeks.
+
+<hr>
+
+<h3>BUILT WITH</h3>
+<li>MongoDB/Mongoose</li>
+<li>Express.js</li>
+<li>React.js</li>
+<li>Node.js</li>
+
+
+<hr>
+
+<h3>THE APPROACH TAKEN</h3>
+I wanted to build an website that is simple and user-friendly. 
+
+<hr>
+
+<h3>FUTURE UPDATES</h3>
+My portfolio is still developing; meaning more robust features will be added:
+<li>I will add more background keyframes to the pages especially in the main page.</li> 
+<li>I will add perhaps an audio playing in the background.</li>
+
+<hr>
+
+<h3>SUPPORT</h3>
+Contributions, issues, and feature requests are welcome!
+Give a ⭐️ if you like this project!
+
+<hr>
+
+<h3>API USED</h3>
+<li>github api</li>
+<li>Type.fit api</li>
+
+<hr>
+
+<h3>CREDITS</h3>
+This is a link to a website that inspired me to  add Marquee tag to my technology page  https://reactjsexample.com/a-silky-smooth-marquee-with-react/
+
+This website also showed me how Marquee tag works https://way2tutorial.com/html/html_marquee_image.php/
+
+<hr>
+
+<h3>MY STRUGGLES</h3>
+<li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was hell.</li>
+<li>I also had issues with my resume popping up on my resume page. For some reasons, it didn't work, only to realize that i didn't import it in the App.js.</li>
+<li>I also had issues converting my React app to a live webpage for anyone to connect to.</li>
+<li> It took me hours to figure out what was wrong with my code when i was trying to have specific parts of my github Api to display my top 3 projects.</li>
+
+<hr>
+
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
