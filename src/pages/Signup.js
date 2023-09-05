@@ -6,7 +6,12 @@ const Signup = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  
+  const handleSubmit = async (e) => {
+    //inside here  you takin the event object from the submit event. *when submitting a form, the default behavior is to refresh the page
+    e.preventDefault()
+    console.log(email, password);
+  }
+
   return (
     <form className="signup" onSubmit={handleSubmit}>
       <h3>Sign up</h3>
