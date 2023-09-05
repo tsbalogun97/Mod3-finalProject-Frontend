@@ -7,7 +7,7 @@ const Signup = () => {
   const [password, setPassword] = useState('')
 
   const handleSubmit = async (e) => {
-    //inside here  you takin the event object from the submit event. *when submitting a form, the default behavior is to refresh the page
+    //inside here you are taking the event object from the submit event. *when submitting a form, the default behavior is to refresh the page
     e.preventDefault()
     console.log(email, password);
   }
@@ -32,8 +32,9 @@ const Signup = () => {
       
       <button>Sign up</button>
     </form>
+    )
+  
+  }
+
+  export default Signup 
     
-
-  )
-
-}
