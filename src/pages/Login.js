@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 
 const Login = () => {
-  //using useState to keep track of what is being typed inside the signup fields for the email & password
+  //using useState to keep track of what is being typed inside the login fields for the email & password
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
