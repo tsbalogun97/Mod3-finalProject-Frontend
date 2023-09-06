@@ -1,8 +1,10 @@
 import { useState } from "react"
 import { useCarsContext } from "../hooks/useCarsContext"
+import { useAuthContext } from "../hooks/useAuthContext"
 
 const CarForm = () => {// state created for each properties of the new CarForm
   const { dispatch } = useCarsContext()
+  const { user } = useAuthContext
 
   const [make, setMake] = useState('')
   const [model, setModel] = useState('')
@@ -15,13 +17,19 @@ const CarForm = () => {// state created for each properties of the new CarForm
   const handleSubmit = async (e) => {
     e.preventDefault()//prevents refresh 
 
+    if (!user) {
+      setError('You must be logged in')
+      return
+    }
+
     const car = {make, model, year, image, mileage}
 
     const response = await fetch('/api/cars', {// use the fetch api to send the post request
       method: 'POST', 
       body: JSON.stringify(car),//this changes car object into a JSON
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${user.token}`
       }
     })
     const json = await response.json() 
