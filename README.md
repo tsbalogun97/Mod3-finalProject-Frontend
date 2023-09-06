@@ -59,14 +59,14 @@ This is a user-friendly web app that shows listings of nice cars that you can pi
 <hr>
 
 <h3>THE APPROACH TAKEN</h3>
-I wanted to build a website that is simple and user-friendly. 
+I wanted to build a website that is simple and user-friendly.
 
 <hr>
 
 <h3>FUTURE UPDATES</h3>
-My portfolio is still developing; meaning more robust features will be added:
-<li>I will add more background keyframes to the pages especially in the main page.</li> 
-<li>I will add perhaps an audio playing in the background.</li>
+This website is still developing; meaning more robust features will be added:
+<li>I will add more cars to the page with more detailed description for each.</li> 
+<li>I will might some keyframes in the footnote just to add some flare.</li>
 
 <hr>
 
@@ -76,30 +76,11 @@ Give a ⭐️ if you like this project!
 
 <hr>
 
-<h3>API USED</h3>
-<li>github api</li>
-<li>Type.fit api</li>
-
-<hr>
-
-<h3>CREDITS</h3>
-This is a link to a website that inspired me to  add Marquee tag to my technology page  https://reactjsexample.com/a-silky-smooth-marquee-with-react/
-
-This website also showed me how Marquee tag works https://way2tutorial.com/html/html_marquee_image.php/
-
-<hr>
-
 <h3>MY STRUGGLES</h3>
 <li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was hell.</li>
-<li>I also had issues with my resume popping up on my resume page. For some reasons, it didn't work, only to realize that i didn't import it in the App.js.</li>
-<li>I also had issues converting my React app to a live webpage for anyone to connect to.</li>
-<li> It took me hours to figure out what was wrong with my code when i was trying to have specific parts of my github Api to display my top 3 projects.</li>
-
+<li>Creating user signup and login form from scratch was hell.</li>
+<li>I encountered so many errors when trying to create a function that overseas updated number of cars in stock. </li>
 <hr>
-
-
-
-
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -169,3 +150,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
