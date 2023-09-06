@@ -50,7 +50,7 @@ This is a user-friendly web app that shows listings of nice cars that you can pi
 <hr>
 
 <h3>THE APPROACH TAKEN</h3>
-I wanted to build a website that is simple and user-friendly.
+I wanted to build a website that is simple and direct.
 
 <hr>
 
@@ -68,8 +68,8 @@ Give a ⭐️ if you like this project!
 <hr>
 
 <h3>MY STRUGGLES</h3>
-<li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was hell.</li>
-<li>Creating user signup and login form from scratch was hell.</li>
+<li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was very hard.</li>
+<li>Creating user signup and login form from scratch was challenging also.</li>
 <li>I encountered so many errors when trying to create a function that overseas updated number of cars in stock. </li>
 <hr>
 
