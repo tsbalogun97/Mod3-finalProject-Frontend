@@ -4,6 +4,7 @@ import { useAuthContext } from './useAuthContext'
 export const useSignup = () => {
   const [error, setError] = useState(null)
   const [isLoading, setIsLoading] = useState(null)
+  const { dispatch } = useAuthContext()
 
   const signup = async (email, password) => {
     setIsLoading(true)
@@ -22,9 +23,13 @@ export const useSignup = () => {
     }
     if (response.ok) {
       // save the user to local storage that way their jwt is still stored somewhere in the browser even if they log in back and forth.
-      localStorage.setItem('user', )
+      localStorage.setItem('user', JSON.stringify(json))//a way to store string such as the jwt and also the email property in the local storage
 
+      //update the auth context
+      dispatch({type: 'LOGIN', payload: json})
+
+      setIsLoading(false)
     }
-
   }
+  return { signup, isLoading, error}
 }

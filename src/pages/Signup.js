@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState } from "react"
+import { useSignup } from "../hooks/useSignup"
 
 const Signup = () => {
   //using useState to keep track of what is being typed inside the signup fields for the email & password
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
+  const {signup, error, isLoading} = useSignup()
 
   const handleSubmit = async (e) => {
     //inside here you are taking the event object from the submit event. *when submitting a form, the default behavior is to refresh the page
     e.preventDefault()
-    console.log(email, password)
+
+    await signup(email, password)
+    // console.log(email, password)
   };
 
   return (
@@ -29,7 +33,9 @@ const Signup = () => {
         value={password}
       />
 
-      <button>Sign up</button>
+      <button disabled={isLoading}>Sign up</button>
+      {/* I added disable value if isloading is true because since its true and the request is going, i dont want to send another one right away */}
+      {error && <div className="error">{error}</div>}
     </form>
   )
 }
