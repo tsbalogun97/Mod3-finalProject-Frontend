@@ -44,8 +44,8 @@ One of the following features instead:
 
 
 
-<u><h1 align="center">My Portfolio</h1></u>
-As I reflect upon graduating from Perscholas Software engineering Bootcamp, I can't help but feel a sense of accomplishment and pride. My journey through this rigorous bootcamp has not been without trials and tribulations. However, I feel that my growth as an individual and student is a direct result of these experiences. This project not only demonstrates how much work I've put in over the course of this Software Engineering Bootcamp, but also how much I’ve fine-tuned my skills-set over this 15 weeks.
+<u><h1 align="center">Classic Car Listing App</h1></u>
+This is a user-friendly web app that shows listings of nice cars that you can pick from. From Lexus to ferrari. It shows the specific car make, model, years, and mileage. You can create an account and have total control of the page. 
 
 <hr>
 

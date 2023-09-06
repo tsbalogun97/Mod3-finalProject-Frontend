@@ -9,7 +9,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     //inside here you are taking the event object from the submit event. *when submitting a form, the default behavior is to refresh the page
     e.preventDefault()
-    console.log(email, password);
+    console.log(email, password)
   }
 
   return (
@@ -18,16 +18,16 @@ const Login = () => {
 
       <label>Email:</label>
       <input 
-      type="email" 
-      onChange={(e) => setEmail(e.target.value)}
-      value={email}
+        type="email" 
+        onChange={(e) => setEmail(e.target.value)}
+        value={email}
       //when the value changes whether typing into the field or delete a letter, you want it to update the email state to match it 
       />
       <label>Password:</label>
       <input 
-      type="password" 
-      onChange={(e) => setPassword(e.target.value)}
-      value={password}
+        type="password" 
+        onChange={(e) => setPassword(e.target.value)}
+        value={password}
       />
       
       <button>Login</button>

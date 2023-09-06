@@ -12,7 +12,7 @@ root.render(
     <AuthContextProvider>
 
       <CarsContextProvider>
-      <App />
+        <App />
       </CarsContextProvider>
 
     </AuthContextProvider>
