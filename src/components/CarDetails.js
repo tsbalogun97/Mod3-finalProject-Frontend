@@ -1,11 +1,19 @@
 import { useCarsContext } from "../hooks/useCarsContext"
+import { useAuthContext } from "../hooks/useAuthContext"
 
 const CarDetails = ({ car }) => {
   const { dispatch } = useCarsContext()
+  const { user} = useAuthContext()
 
   const handleClick = async () => {
+    if (!user) {
+      return
+    }
     const response = await fetch('/api/cars/' +car._id, {
-      method: 'DELETE'
+      method: 'DELETE',
+      headers: {
+        'Authorization': `Bearer ${user.token}`
+      }
     })
     const json = await response.json() 
 
