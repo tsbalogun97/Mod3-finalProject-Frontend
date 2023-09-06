@@ -36,14 +36,6 @@ One of the following features instead:
 
 
 
-
-
-
-
-
-
-
-
 <u><h1 align="center">Classic Car Listing App</h1></u>
 This is a user-friendly web app that shows listings of nice cars that you can pick from. From Lexus to ferrari. It shows the specific car make, model, years, and mileage. You can create an account and have total control of the page. 
 
@@ -54,7 +46,6 @@ This is a user-friendly web app that shows listings of nice cars that you can pi
 <li>Express.js</li>
 <li>React.js</li>
 <li>Node.js</li>
-
 
 <hr>
 
@@ -150,6 +141,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
 
 
 
