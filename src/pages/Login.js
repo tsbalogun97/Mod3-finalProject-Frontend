@@ -6,7 +6,7 @@ const Login = () => {
   //using useState to keep track of what is being typed inside the login fields for the email & password
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const [login, error, isLoading] = useLogin()
+  const {login, error, isLoading} = useLogin()
 
   const handleSubmit = async (e) => {
     //inside here you are taking the event object from the submit event. *when submitting a form, the default behavior is to refresh the page

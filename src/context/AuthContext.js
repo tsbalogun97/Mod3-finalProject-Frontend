@@ -1,4 +1,4 @@
-import { createContext, useReducer } from 'react'
+import { createContext, useReducer, useEffect } from 'react'
 
 export const AuthContext = createContext()
 
@@ -22,6 +22,16 @@ export const  AuthContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, {
     user: null 
   })
+
+  useEffect(() =>{//this means only fire this useEffect function once when the component first renders as the react app loads. this function is implemented just to check for the token in the localstorage just once in order to find out if there's a value for it
+    const user = JSON.parse(localStorage.getItem('user'))
+    //a way to parse that into an object you can use in javascript since JSON is a string in the localStorage
+
+    if (user) {
+      dispatch({ type: 'LOGIN', payload: user})
+    }
+  }, [])
+
 
   console.log('AuthContext state: ', state)//this is how you keep track of things as a developer
 
