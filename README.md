@@ -59,7 +59,7 @@ This is a user-friendly web app that shows listings of nice cars that you can pi
 <hr>
 
 <h3>THE APPROACH TAKEN</h3>
-I wanted to build an website that is simple and user-friendly. 
+I wanted to build a website that is simple and user-friendly. 
 
 <hr>
 
