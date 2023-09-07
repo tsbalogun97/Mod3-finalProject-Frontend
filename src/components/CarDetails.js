@@ -55,9 +55,10 @@ const handleCancelEdit = () => {
 const handleSubmit = async () => {
   try {
     const response = await fetch("/api/cars/" + car._id, {
-      method: "POST", // Use PATCH method for updating
+      method: "PATCH", // Use PATCH method for updating
       headers: {
         "Content-Type": "application/json",
+        Authorization: `Bearer ${user.token}`,
       },
       body: JSON.stringify(editedCar), // Send the edited workout data
     });
@@ -69,7 +70,7 @@ const handleSubmit = async () => {
     const json = await response.json();
     if (response.ok) {
       dispatch({ type: "UPDATE_CAR", payload: json });
-      setEditMode(false); // Switch back to view mode after successful update
+      setEditMode(true); // Switch back to view mode after successful update
     }
   } catch (error) {
     // Handle any network or other errors

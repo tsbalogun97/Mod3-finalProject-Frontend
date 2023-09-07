@@ -7,7 +7,7 @@
   --error: #8DB600;
 }
 body {
-  background-image: url("https://cdn.wallpapersafari.com/93/73/f7lO5P.jpg");
+  background-image: url("https://img.freepik.com/premium-vector/vintage-car-illustration-solid-color_232942-63.jpg?w=2000");
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -45,8 +45,9 @@ header a {
   grid-template-columns: 3fr 1fr;
   gap: 100px;
 }
-.car-details {
+.car-details{
   background: #6cb4ee;
+  opacity: 0.9;
   border-radius: 4px;
   margin: 20px auto;
   padding: 20px;

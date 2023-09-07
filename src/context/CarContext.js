@@ -16,6 +16,14 @@ export const carsReducer = (state, action) => {
       return {
         cars: state.cars.filter((car) => car._id !== action.payload._id)
       }
+    /////************************************************** */
+    case "UPDATE_CAR":
+      return {
+        cars: state.cars.map((car) =>
+          car._id === action.payload._id ? action.payload : car
+        ),
+      };
+      
     default: //this is needed if none of them match and in that case, you just return the state unchanged
       return state
   }
