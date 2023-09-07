@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container">
         <Link to="/">
         <img src='https://www.designrush.com/topbest/images/avatar-designrush.png' className='logo'/>
-          <h1 className='carC'> Classic Car Listings</h1>
+          <h1 className='carC'> Vintage Car Listings</h1>
           
         </Link>
         <nav>
