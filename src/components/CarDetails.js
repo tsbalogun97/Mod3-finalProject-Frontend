@@ -10,6 +10,7 @@ const CarDetails = ({ car }) => {
 
 
   //******************************************************************* */
+  
   const handleEdit = async () => {
     if (!user || !user.token) {
       console.error("User is not authenticated.");
@@ -43,7 +44,9 @@ const CarDetails = ({ car }) => {
       console.error("Update failed:", error);
     }
   };
-///********************************************************************************************* */
+
+
+  ///********************************************************************************************* */
 
 const handleCancelEdit = () => {
   setEditedCar (false); // Cancel editing and switch back to view mode
@@ -146,10 +149,6 @@ const handleClick = async () => {
         <button onClick={handleCancelEdit}>Cancel</button>
       </form>
       
-      
-      
-      
-      
       ): (
       <>
       <h4>{car.title}</h4>
@@ -166,6 +165,10 @@ const handleClick = async () => {
   )
 };
 export default CarDetails
+      
+      
+      
+      
 
 
 
