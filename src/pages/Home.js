@@ -4,6 +4,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 
 //components
 import CarDetails from "../components/CarDetails";
+// import CarForm from "../components/CarForm";
 import CarForm from "../components/CarForm";
 
 const Home = () => {
@@ -31,27 +32,21 @@ const Home = () => {
     if (user) {
       fetchCars();
     }
-  }, [dispatch, user]);
+  }, [dispatch, user, cars]);
 
   return (
     <div className="home">
       {/* <h2>Home</h2> */}
       <div className="cars">
-        {cars &&
-          cars.map(
-            (
-              car //this means if we have a value of cars then we will map through them
-            ) => (
-              // if this is null, which is the initial start, then it will not run through the map.*only works
-              // when the json is updated
-              // <p key={car._id}>{car.title}</p>
-              <CarDetails key={car._id} car={car} />
-            )
-          )}
+      {cars &&
+            cars.map((car) => {
+              return <CarDetails car={car} key={car._id} />;
+            })}
       </div>
       <CarForm />
     </div>
   );
 };
+          
 
 export default Home;

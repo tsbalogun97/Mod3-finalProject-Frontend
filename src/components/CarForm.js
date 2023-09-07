@@ -4,8 +4,9 @@ import { useAuthContext } from "../hooks/useAuthContext"
 
 const CarForm = () => {// state created for each properties of the new CarForm
   const { dispatch } = useCarsContext()
-  const { user } = useAuthContext
-
+  const  {user}  = useAuthContext()
+  // const user = localStorage.getItem('user');
+  
   const [make, setMake] = useState('')
   const [model, setModel] = useState('')
   const [year, setYear] = useState('')
@@ -23,7 +24,9 @@ const CarForm = () => {// state created for each properties of the new CarForm
     }
 
     const car = {make, model, year, image, mileage}
-
+      // var obj = JSON.parse(user)
+      
+      // console.log(obj.token);
     const response = await fetch('/api/cars', {// use the fetch api to send the post request
       method: 'POST', 
       body: JSON.stringify(car),//this changes car object into a JSON
@@ -49,7 +52,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       setError(null)
       setEmptyFields([])
       console.log('new car added', json);
-      dispatch({tyepe: 'CREATE_CAR', payload: json})
+      dispatch({type: 'CREATE_CAR', payload: json})
     }
   }
 
@@ -92,7 +95,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       
       <label>Mileage:</label>
       <input 
-      type="String" 
+      type="number" 
       onChange={(e) => setMileage(e.target.value)}  
       value={mileage}
       className={emptyFields.includes('mileage') ? 'error' : ''}
