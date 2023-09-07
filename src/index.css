@@ -23,7 +23,7 @@ header {
 header .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 5px 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -153,7 +153,8 @@ form.signup, form.login {
 }
 
 .logo {
-  width: 6vw;
+  width: 4vw;
+  margin-top: 5px;
 }
 
 .carC, .logo {
