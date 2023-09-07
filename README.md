@@ -1,5 +1,5 @@
 <u><h1 align="center">Classic Car Listing App</h1></u>
-This is a user-friendly web app that allows clients to signup and add their favorite classic cars to the page with their unique car listings.You have total control of the page.
+This is a user-friendly web app that allows clients to signup and add their favorite classic cars to the page with their unique car listings.You have total control of the page. 
 
 <hr>
 
@@ -32,7 +32,10 @@ Give a ⭐️ if you like this project!
 <h3>MY STRUGGLES</h3>
 <li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was very hard.</li>
 <li>Creating user signup and login form from scratch was challenging also.</li>
+<li>I encountered so many errors when trying to create a function that overseas updated number of cars in stock. </li>
+<hr>
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
