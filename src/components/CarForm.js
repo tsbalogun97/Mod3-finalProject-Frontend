@@ -61,7 +61,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
     <form className="create" onSubmit={handleSubmit}>
       <h3>Add a New Car</h3>
 
-      <label>Vehicle Make:</label>
+      <label className="opt">Vehicle Make:</label>
       <input 
       type="text" 
       onChange={(e) => setMake(e.target.value)} //basically the user call the setMake function, 
@@ -69,7 +69,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       className={emptyFields.includes('make') ? 'error' : ''}
       />
       
-      <label>Vehicle Model:</label>
+      <label className="opt">Vehicle Model:</label>
       <input 
       type="text" 
       onChange={(e) => setModel(e.target.value)} 
@@ -77,7 +77,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       className={emptyFields.includes('model') ? 'error' : ''}
       />
       
-      <label>Vehicle Year:</label>
+      <label className="opt">Vehicle Year:</label>
       <input 
       type="number" 
       onChange={(e) => setYear(e.target.value)} 
@@ -85,7 +85,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       className={emptyFields.includes('year') ? 'error' : ''}
       />
       
-      <label>Vehicle Image:</label>
+      <label className="opt">Vehicle Image:</label>
       <input 
       type="string" 
       onChange={(e) => setImage(e.target.value)} 
@@ -93,7 +93,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       className={emptyFields.includes('image') ? 'error' : ''}
       />
       
-      <label>Mileage:</label>
+      <label className="opt">Mileage:</label>
       <input 
       type="number" 
       onChange={(e) => setMileage(e.target.value)}  

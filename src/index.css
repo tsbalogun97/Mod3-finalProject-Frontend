@@ -7,12 +7,12 @@
   --error: #8DB600;
 }
 body {
-  background-image: url("https://img.freepik.com/premium-vector/vintage-car-illustration-solid-color_232942-63.jpg?w=2000");
+  background-image: url("https://advertising.expedia.com/wp-content/uploads/2020/08/Car-Hero_1920x800.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-size: 100% 100%;
   image-rendering: pixelated;
-  /* background-color: #; */
+  /* background-color: #176B87; */
   margin: 0;
   font-family: "Poppins";
   
@@ -30,7 +30,7 @@ header .container {
   
 }
 header a {
-  color: #333;
+  color: black;
   text-decoration: none;
 }
 
@@ -145,4 +145,19 @@ form.signup, form.login {
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+}
+
+.opt {
+  color: rgb(254,193,79);
+  font-weight: bold;
+}
+
+.logo {
+  width: 6vw;
+}
+
+.carC, .logo {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
 }
