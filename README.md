@@ -70,7 +70,6 @@ Give a ⭐️ if you like this project!
 <h3>MY STRUGGLES</h3>
 <li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was very hard.</li>
 <li>Creating user signup and login form from scratch was challenging also.</li>
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
