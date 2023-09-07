@@ -27,6 +27,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 header a {
   color: #333;
@@ -46,7 +47,7 @@ header a {
   gap: 100px;
 }
 .car-details{
-  background: #6cb4ee;
+  background: #99ffff;
   opacity: 0.9;
   border-radius: 4px;
   margin: 20px auto;
