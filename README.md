@@ -37,7 +37,7 @@ One of the following features instead:
 
 
 <u><h1 align="center">Classic Car Listing App</h1></u>
-This is a user-friendly web app that shows listings of nice cars that you can pick from. From Lexus to ferrari. It shows the specific car make, model, years, and mileage. You can create an account and have total control of the page. 
+This is a user-friendly web app that allows clients to signup and add their favorite classic cars to the page with their unique car listings.You have total control of the page.
 
 <hr>
 
@@ -56,8 +56,8 @@ I wanted to build a website that is simple and direct.
 
 <h3>FUTURE UPDATES</h3>
 This website is still developing; meaning more robust features will be added:
-<li>I will add more cars to the page with more detailed description for each.</li> 
-<li>I will might some keyframes in the footnote just to add some flare.</li>
+<li>clients will be able to add detailed description to their favorite cars.</li> 
+<li>I will also add some keyframes in the footnote just to add some flare.</li>
 
 <hr>
 
@@ -70,10 +70,7 @@ Give a ⭐️ if you like this project!
 <h3>MY STRUGGLES</h3>
 <li>I struggled alot with typos which meant errors popping up on my page and having to pinpoint exactly where was very hard.</li>
 <li>Creating user signup and login form from scratch was challenging also.</li>
-<li>I encountered so many errors when trying to create a function that overseas updated number of cars in stock. </li>
-<hr>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
