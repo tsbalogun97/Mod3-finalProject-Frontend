@@ -27,7 +27,7 @@ const CarForm = () => {// state created for each properties of the new CarForm
       // var obj = JSON.parse(user)
       
       // console.log(obj.token);
-    const response = await fetch('/api/cars', {// use the fetch api to send the post request
+    const response = await fetch('https://carlistings-backend.onrender.com/api/cars', {// use the fetch api to send the post request
       method: 'POST', 
       body: JSON.stringify(car),//this changes car object into a JSON
       headers: {

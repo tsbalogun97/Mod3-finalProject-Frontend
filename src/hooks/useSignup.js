@@ -10,7 +10,7 @@ export const useSignup = () => {
     setIsLoading(true)
     setError(null)
 
-    const response = await fetch('/api/user/signup', {
+    const response = await fetch('https://carlistings-backend.onrender.com/api/user/signup', {
       method: 'POST',
       headers: {'Content-Type': 'application/json'},// way to send data to the request body property.
       body: JSON.stringify({email, password})

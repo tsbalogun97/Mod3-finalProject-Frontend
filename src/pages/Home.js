@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchCars = async () => {
-      const response = await fetch("/api/cars", {
+      const response = await fetch("https://carlistings-backend.onrender.com/api/cars", {
         headers: {
           "Content-Type": "application/json",
           'Authorization': `Bearer ${user.token}`//this is a way to send this authorization headers with the user token which can be grabbed in the backend inside the middleware function that protects the api routes. If valid, it will give access to the './api/cars' endpoint

@@ -18,7 +18,7 @@ const CarDetails = ({ car }) => {
     }
     setEditMode(true);
     try {
-      const response = await fetch("/api/cars/" + car._id, {
+      const response = await fetch("https://carlistings-backend.onrender.com/api/cars/" + car._id, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -57,7 +57,7 @@ const handleCancelEdit = () => {
 
 const handleSubmit = async () => {
   try {
-    const response = await fetch("/api/cars/" + car._id, {
+    const response = await fetch("https://carlistings-backend.onrender.com/api/cars/" + car._id, {
       method: "PATCH", // Use PATCH method for updating
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ const handleClick = async () => {
     if (!user) {
       return
     }
-    const response = await fetch('/api/cars/' +car._id, {
+    const response = await fetch('https://carlistings-backend.onrender.com/api/cars/' +car._id, {
       method: 'DELETE',
       headers: {
         'Authorization': `Bearer ${user.token}`
